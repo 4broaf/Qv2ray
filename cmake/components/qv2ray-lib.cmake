@@ -2,6 +2,7 @@ set(QV2RAY_BASE_HEADERS
     ${CMAKE_SOURCE_DIR}/src/base/JsonHelpers.hpp
     ${CMAKE_SOURCE_DIR}/src/base/models/CoreObjectModels.hpp
     ${CMAKE_SOURCE_DIR}/src/base/models/QvConfigIdentifier.hpp
+    ${CMAKE_SOURCE_DIR}/src/base/models/QvComplexConfigModels.hpp
     ${CMAKE_SOURCE_DIR}/src/base/models/QvRuntimeConfig.hpp
     ${CMAKE_SOURCE_DIR}/src/base/models/QvSafeType.hpp
     ${CMAKE_SOURCE_DIR}/src/base/models/QvCoreSettings.hpp
@@ -36,6 +37,8 @@ set(QV2RAY_LIB_SOURCES
     ${CMAKE_SOURCE_DIR}/src/components/latency/LatencyTestThread.hpp
     ${CMAKE_SOURCE_DIR}/src/components/latency/TCPing.cpp
     ${CMAKE_SOURCE_DIR}/src/components/latency/TCPing.hpp
+    ${CMAKE_SOURCE_DIR}/src/components/latency/RealPing.cpp
+    ${CMAKE_SOURCE_DIR}/src/components/latency/RealPing.hpp
     ${CMAKE_SOURCE_DIR}/src/components/latency/DNSBase.hpp
     ${CMAKE_SOURCE_DIR}/src/components/latency/win/ICMPPing.cpp
     ${CMAKE_SOURCE_DIR}/src/components/latency/win/ICMPPing.hpp
@@ -54,7 +57,6 @@ set(QV2RAY_LIB_SOURCES
     ${CMAKE_SOURCE_DIR}/src/components/proxy/QvProxyConfigurator.cpp
     ${CMAKE_SOURCE_DIR}/src/components/proxy/QvProxyConfigurator.hpp
     #
-    ${CMAKE_SOURCE_DIR}/src/components/route/presets/RouteScheme_V2rayN.hpp
     ${CMAKE_SOURCE_DIR}/src/components/route/RouteSchemeIO.cpp
     ${CMAKE_SOURCE_DIR}/src/components/route/RouteSchemeIO.hpp
     #
